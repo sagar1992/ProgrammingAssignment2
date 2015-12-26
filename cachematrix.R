@@ -1,15 +1,45 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+####################################################################
+# @author:      Sagar Pathak
+# @description: R Programming Assignment 2
+#               Johns Hopkins University, Coursera
+# @email:       surfer.sagar@gmail.com
+# @date:        2015/12/26
+####################################################################
 
 makeCacheMatrix <- function(x = matrix()) {
-
+  ## Initialize the inverse property
+  i <- NULL
+  
+  ## Method to set the matrix
+  setMatrix <- function( matrix ) {
+    m <<- matrix
+    i <<- NULL
+  }
+  
+  ## Method the get the matrix
+  getMatrix <- function() {
+    ## Return the matrix
+    m
+  }
+  
+  ## Method to set the inverse of the matrix
+  setInverse <- function(inverse) {
+    i <<- inverse
+  }
+  
+  ## Method to get the inverse of the matrix
+  getInverse <- function() {
+    ## Return the inverse property
+    i
+  }
+  
+  ## Return a list of the methods
+  list(setMatrix = setMatrix, getMatrix = getMatrix, setInverse = setInverse, getInverse = getInverse)
 }
 
 
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  
 }
